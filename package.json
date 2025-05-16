@@ -1,22 +1,35 @@
 {
   "name": "koishi-plugin-ocr",
-  "description": "调用PaddleOCR或RapidOCR进行OCR识别",
+  "description": "本地 OCR 服务，调用 PaddleOCR 或 RapidOCR 进行识别（开坑中，一堆bug，勿用）",
   "version": "0.0.1",
+  "contributors": [
+    "Yis_Rime <yis_rime@outlook.com>"
+  ],
+  "homepage": "https://github.com/YisRime/koishi-plugin-ocr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YisRime/koishi-plugin-ocr.git"
+  },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
-  "license": "MIT",
-  "scripts": {},
+  "license": "AGPL-3.0-only",
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "ocr",
+    "paddleocr",
+    "rapidocr"
   ],
   "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.18.7"
+  },
+  "dependencies": {
+    "paddleocrjson": "^1.0.0"
   }
 }
